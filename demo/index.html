@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>SIH26171 — Evaluation Sets</title>
+<style>
+body{font-family:system-ui,sans-serif;background:#0b0f1a;color:#e2e8f0;margin:0;padding:40px 20px}
+.w{max-width:680px;margin:0 auto}
+h1{color:#a78bfa;font-size:22px;margin:0 0 4px}
+p.s{color:#64748b;font-size:13px;margin:0 0 28px}
+a.card{display:block;background:#0f172a;border:1px solid #1e293b;border-radius:10px;padding:18px;margin-bottom:12px;text-decoration:none;color:inherit}
+a.card:hover{border-color:#7c3aed}
+a.card h2{margin:0 0 6px;font-size:15px;color:#e2e8f0}
+a.card p{margin:0;font-size:12px;color:#94a3b8;line-height:1.6}
+.tag{display:inline-block;font-size:10px;background:#1e293b;color:#94a3b8;padding:2px 8px;border-radius:10px;margin-right:5px;margin-top:8px}
+</style></head><body><div class="w">
+<h1>SIH26171 — Evaluation Sets</h1>
+<p class="s">Three-set benchmark. Load the extension, open each page, and run Rescan + Leak Test.</p>
+<a class="card" href="set-a-synthetic.html"><h2>Set A — Synthetic</h2>
+<p>Known ground truth: 14 planted PII entities plus decoys that must not be redacted. Used for precision/recall measurement.</p>
+<span class="tag">ground truth</span><span class="tag">canvas fallback</span><span class="tag">form fields</span></a>
+<a class="card" href="set-b-realistic.html"><h2>Set B — Realistic clone</h2>
+<p>Cluttered government-portal layout, table-based structure, mixed Hindi/English, real-world field naming.</p>
+<span class="tag">domain generalisation</span><span class="tag">multilingual</span></a>
+<a class="card" href="set-c-adversarial.html"><h2>Set C — Adversarial</h2>
+<p>Format obfuscation, checksum decoys, context traps, and nine prompt-injection payloads including three hidden from the human eye.</p>
+<span class="tag">obfuscation</span><span class="tag">injection</span><span class="tag">over-redaction traps</span></a>
+</div></body></html>
